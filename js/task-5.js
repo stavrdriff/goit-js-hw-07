@@ -6,7 +6,10 @@ const buttonHandler = () => {
   const text = widget.querySelector('.color');
 
   button.addEventListener('click', () => {
-    text.textContent = getRandomHexColor();
+    const color = getRandomHexColor();
+
+    text.textContent = color;
+    document.body.style.backgroundColor = color;
   })
 }
 
