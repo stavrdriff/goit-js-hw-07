@@ -1,3 +1,5 @@
+'use strict'
+
 const buttonHandler = () => {
   const widget = document.querySelector('.widget');
   const button = widget.querySelector('.change-color');
