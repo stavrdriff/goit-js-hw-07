@@ -9,7 +9,7 @@ const submitForm = () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    if (!emailInput.value.length || !passInput.value.length) {
+    if (!emailInput.value.trim().length || !passInput.value.trim().length) {
       alert('All form fields must be filled in');
     }
     else {
