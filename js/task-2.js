@@ -1,3 +1,5 @@
+'use sctrict'
+
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -27,3 +29,30 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+const createGalleryItems = arr => {
+  const gallery = document.querySelector('ul.gallery');
+
+  arr.forEach(item => {
+    // ------------------ document.createElement --------------------------
+
+    // const listItem = document.createElement('li');
+    // const image = document.createElement('img');
+    // gallery.append(listItem);
+    // listItem.append(image);
+
+    // listItem.classList.add('gallery-item');
+    // image.classList.add('gallery-image');
+    // image.setAttribute('src', item.url);
+    // image.setAttribute('alt', item.alt);
+
+    // ------------------- el.insertAdjacentHTML ---------------------------
+
+    const card = `<li class="gallery-item">
+      <img class="gallery-image" src="${item.url}" alt="${item.alt}">
+    </li>`
+    gallery.insertAdjacentHTML('beforeend', card);
+  });
+}
+
+createGalleryItems(images);
