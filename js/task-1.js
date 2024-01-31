@@ -1,9 +1,8 @@
-'use sctrict';
+'use strict';
 
 const categoriesListLength = () => {
   const categoriesList = document.getElementById('categories');
   const itemsArr = [...categoriesList.querySelectorAll('.item')];
-  // const itemsArr = [...categoriesList.children];
 
   console.log(`Number of categories: ${itemsArr.length}`);
 

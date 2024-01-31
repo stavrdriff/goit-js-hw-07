@@ -1,4 +1,4 @@
-'use sctrict'
+'use strict';
 
 const greetings = () => {
   const input = document.querySelector('input#name-input');

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const buttonHandler = () => {
   const widget = document.querySelector('.widget');

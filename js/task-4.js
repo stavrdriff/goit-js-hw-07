@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const submitForm = () => {
   const form = document.querySelector('form.login-form');
