@@ -1,4 +1,4 @@
-'use sctrict'
+'use sctrict';
 
 const categoriesListLength = () => {
   const categoriesList = document.getElementById('categories');
