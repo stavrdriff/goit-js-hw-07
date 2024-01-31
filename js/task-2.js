@@ -30,14 +30,17 @@ const images = [
   },
 ];
 
+const card = (url, alt) => {
+  return `<li class="gallery-item">
+      <img class="gallery-image" src="${url}" alt="${alt}">
+    </li>`
+}
+
 const createGalleryItems = arr => {
   const gallery = document.querySelector('ul.gallery');
 
   arr.forEach(item => {
-    const card = `<li class="gallery-item">
-      <img class="gallery-image" src="${item.url}" alt="${item.alt}">
-    </li>`
-    gallery.insertAdjacentHTML('beforeend', card);
+    gallery.insertAdjacentHTML('beforeend', card(item.url, item.alt));
   });
 }
 
