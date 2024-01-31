@@ -34,20 +34,6 @@ const createGalleryItems = arr => {
   const gallery = document.querySelector('ul.gallery');
 
   arr.forEach(item => {
-    // ------------------ document.createElement --------------------------
-
-    // const listItem = document.createElement('li');
-    // const image = document.createElement('img');
-    // gallery.append(listItem);
-    // listItem.append(image);
-
-    // listItem.classList.add('gallery-item');
-    // image.classList.add('gallery-image');
-    // image.setAttribute('src', item.url);
-    // image.setAttribute('alt', item.alt);
-
-    // ------------------- el.insertAdjacentHTML ---------------------------
-
     const card = `<li class="gallery-item">
       <img class="gallery-image" src="${item.url}" alt="${item.alt}">
     </li>`
